@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+}
+.container {
+  background: rgba(128, 128, 128, 0.1);
+  padding: 40px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.likes {
+  background: peachpuff;
+  padding: 20px 40px;
+  border-radius: 20px;
+}
+.likes h4 {
+  color: green;
+  font-size: 28px;
+  font-weight: bold;
+}
+.dislikes h4 {
+  color: red;
+  font-size: 28px;
+  font-weight: bold;
+}
+.likes ol li {
+  font-size: 20px;
+}
+.dislikes {
+  background: lightgreen;
+  padding: 20px 40px;
+  border-radius: 20px;
+  width: 400px;
+}
+.dislikes ul li {
+  font-size: 20px;
+}
+/* media queries */
+@media (max-width: 800px) {
+  .container {
+    flex-direction: column;
+  }
+  .likes,
+  .dislikes {
+    margin: 20px;
+  }
+  .dislikes {
+    width: 80vw;
+  }
+}
